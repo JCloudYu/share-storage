@@ -8,7 +8,7 @@ npm install https://github.com/JCloudYu/shared-storage.git
 ```
 
 ```javascript
-const storage = require('shared');
+const storage = require('shared-storage');
 ```
 
 # Extension #
@@ -26,7 +26,7 @@ declare global {
 
 And you can refer to the `version` and `code` properties directly in your code!
 ```typescript
-const storage = require('shared');
+const storage = require('shared-storage');
 const code_num = storage.code;
 storage.version = '0.1.0';
 ```
