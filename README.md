@@ -4,7 +4,7 @@ This module is intended to provide a typescript friendly shared storage on which
 # Usage #
 Simply install it via npm and require it directly.
 ```bash
-npm install https://github.com/JCloudYu/singleton.git
+npm install https://github.com/JCloudYu/shared-storage.git
 ```
 
 ```javascript
