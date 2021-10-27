@@ -1,0 +1,23 @@
+{
+	"private": true,
+	"name": "shared",
+	"version": "1.0.0",
+	"description": "A dunny shared storage that allows easy integration in typescript with global ExtendedSharedStorage interface!",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JCloudYu/singleton.git"
+	},
+	"keywords": [
+		"SharedStorage"
+	],
+	"author": "JCloudYu",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/JCloudYu/singleton/issues"
+	},
+	"homepage": "https://github.com/JCloudYu/singleton#readme"
+}
