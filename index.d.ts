@@ -1,6 +1,6 @@
 declare global {
-	interface ExtendedSharedStorage {};
+	interface ExtendedSharedStorage {}
 }
 
-const storage:ExtendedSharedStorage;
+declare const storage:ExtendedSharedStorage;
 export default storage;
