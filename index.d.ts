@@ -3,4 +3,4 @@ declare global {
 }
 
 declare const storage:ExtendedSharedStorage;
-export default storage;
+export = storage;
