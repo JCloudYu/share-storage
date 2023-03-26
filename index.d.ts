@@ -1,6 +1,8 @@
+interface StorageClear {(identifier:string, clear:true):void}
 declare global {
-	interface ExtendedSharedStorage {}
+	interface ExtendedSharedStorage {(identifier:string):{}}
 }
 
-declare const storage:ExtendedSharedStorage;
+interface SharedStorage extends StorageClear, ExtendedSharedStorage {}
+declare const storage:SharedStorage;
 export = storage;
