@@ -3,7 +3,7 @@ const volatile= new WeakMap();
 module.exports = function(key, clear=false) {
 	if ( Object(key) === key && !(key instanceof String) ) {
 		if ( clear || volatile.get(key) === undefined ) {
-			volatile.set(key) = {};
+			volatile.set(key, {});
 		}
 
 		return volatile.get(key);
