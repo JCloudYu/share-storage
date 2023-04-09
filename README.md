@@ -21,12 +21,32 @@ declare global {
 		version?:string;
 		code?:number;
 	}
+
+	interface ExtendedSharedStorage {
+		(identifier:'demo'): { message:string; };
+		(identifier:Object): { content:string; };
+	}
 };
 ```
 
 And you can refer to the `version` and `code` properties directly in your code!
 ```typescript
+// Direct access on shared object
 const storage = require('shared-storage');
 const code_num = storage.code;
 storage.version = '0.1.0';
+
+// Scopped contents
+storage('demo').message = 'message';
+
+// Volatile contents that are bound to an object
+const obj1 = {};
+storage(obj1).content = '123';
+
+const obj2 = {};
+storage(obj2).content = '456';
+
+
+console.log( storage(obj1).content );  // will output 123
+console.log( storage(obj2).content );  // will output 456
 ```
