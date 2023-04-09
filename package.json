@@ -1,7 +1,7 @@
 {
 	"private": true,
 	"name": "shared-storage",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "A dunny shared storage that allows easy integration in typescript with global ExtendedSharedStorage interface!",
 	"main": "index.js",
 	"scripts": {
