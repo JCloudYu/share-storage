@@ -11,10 +11,11 @@ module.exports = function(key, clear=false) {
 
 	
 
-	if ( !(key instanceof String) || (typeof key !== "string") ) {
+	if ( !(key instanceof String) && (typeof key !== "string") ) {
 		throw new TypeError("Input key must be a string for static storage or an object for volitile storage!");
 	}
 	
+	key = String(key);
 	if ( clear === true ) {
 		delete storage_map[key];
 		return;
