@@ -1,8 +1,7 @@
 {
-	"private": true,
-	"name": "shared-storage",
+	"name": "shstore",
 	"version": "1.1.0",
-	"description": "A dunny shared storage that allows easy integration in typescript with global ExtendedSharedStorage interface!",
+	"description": "A library that provides a tiny shared storage within the same context.",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"

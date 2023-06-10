@@ -1,6 +1,7 @@
 interface StorageClear {(identifier:string|object, clear:true):void}
 declare global {
-	interface ExtendedSharedStorage {(identifier:string):{[key:string|number|symbol]:any}}
+	interface SStorageExt {(identifier:string):{[key:string|number|symbol]:any}}
+	type ExtSharedStorage = SStorageExt;
 }
 
 interface SharedStorage extends StorageClear, ExtendedSharedStorage {}
